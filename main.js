@@ -17,7 +17,10 @@ map.on('load', function () {
     'id': 'New Mangroves',
     'type': 'fill',
     'source': 'new_mgvs',
-    'layout': {},
+    'layout': {
+      // make layer visible by default
+      'visibility': 'visible'
+    },
     'paint': {
       'fill-color': '#ed5826',
       'fill-opacity': 0.3
@@ -33,7 +36,10 @@ map.on('load', function () {
     'id': 'Old Mangroves',
     'type': 'fill',
     'source': 'old_mgvs',
-    'layout': {},
+    'layout': {
+      // make layer visible by default
+      'visibility': 'visible'
+    },
     'paint': {
       'fill-color': '#088',
       'fill-opacity': 0.3
@@ -68,9 +74,11 @@ for (var i = 0; i < toggleableLayerIds.length; i++) {
     if (visibility === 'visible') {
       map.setLayoutProperty(clickedLayer, 'visibility', 'none');
       this.className = '';
+      console.log('1');
     } else {
       this.className = 'active';
       map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+      console.log('2');
     }
   };
 
