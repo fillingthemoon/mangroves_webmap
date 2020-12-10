@@ -14,7 +14,7 @@ map.on('load', function () {
     'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/new_mgvs.json'
   });
   map.addLayer({
-    'id': 'new_mgvs',
+    'id': 'New Mangroves',
     'type': 'fill',
     'source': 'new_mgvs',
     'layout': {},
@@ -30,7 +30,7 @@ map.on('load', function () {
     'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/old_mgvs.json'
   });
   map.addLayer({
-    'id': 'old_mgvs',
+    'id': 'Old Mangroves',
     'type': 'fill',
     'source': 'old_mgvs',
     'layout': {},
@@ -41,23 +41,39 @@ map.on('load', function () {
   });
 });
 
-// Create legend
-var layers = ['New Mangroves', 'Old Mangroves']
+
+// enumerate ids of the layers
+var toggleableLayerIds = ['New Mangroves', 'Old Mangroves'];
 var colors = ['#ED5826', '#088']
 
-for (i = 0; i < layers.length; i++) {
-  var layer = layers[i];
+// set up the corresponding toggle button for each layer
+for (var i = 0; i < toggleableLayerIds.length; i++) {
+  var id = toggleableLayerIds[i];
+
+  var link = document.createElement('a');
+  link.href = '#';
+  link.className = 'active';
+  link.textContent = id;
   var color = colors[i];
-  var item = document.createElement('div');
-  var key = document.createElement('span');
-  key.className = 'legend-key';
-  key.style.backgroundColor = color;
+  link.style.backgroundColor = color;
 
-  var value = document.createElement('span');
-  value.innerHTML = layer;
-  item.appendChild(key);
-  item.appendChild(value);
-  legend.appendChild(item);
+  link.onclick = function (e) {
+    var clickedLayer = this.textContent;
+    e.preventDefault();
+    e.stopPropagation();
+
+    var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
+
+    // toggle layer visibility by changing the layout object's visibility property
+    if (visibility === 'visible') {
+      map.setLayoutProperty(clickedLayer, 'visibility', 'none');
+      this.className = '';
+    } else {
+      this.className = 'active';
+      map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+    }
+  };
+
+  var layers = document.getElementById('menu');
+  layers.appendChild(link);
 }
-
-
