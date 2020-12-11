@@ -1,3 +1,4 @@
+// Create map
 mapboxgl.accessToken = 'pk.eyJ1IjoiZmlsbGluZ3RoZW1vb24iLCJhIjoiY2tpaGxrbjZmMDNicTJ4bThmd3preWJvbyJ9.ca_X_SaaPktyuEBL2RzoRA';
 
 var map = new mapboxgl.Map({
@@ -7,6 +8,8 @@ var map = new mapboxgl.Map({
   zoom: 16 // starting zoom
 });
 
+
+// Add GeoJSON files
 map.on('load', function () {
   // Load in new mangroves
   map.addSource('new_mgvs', {
@@ -23,7 +26,7 @@ map.on('load', function () {
     },
     'paint': {
       'fill-color': '#ed5826',
-      'fill-opacity': 0.3
+      'fill-opacity': 0.2
     }
   });
 
@@ -42,17 +45,17 @@ map.on('load', function () {
     },
     'paint': {
       'fill-color': '#008888',
-      'fill-opacity': 0.3
+      'fill-opacity': 0.2
     }
   });
 
   // load in new plots
   map.addSource('new_plots', {
     'type': 'geojson',
-    'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/new_plots_rdm.json'
+    'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/new_rdm_plots.json'
   });
   map.addLayer({
-    'id': 'Plots for new mangroves',
+    'id': 'Random plots for new mangroves',
     'type': 'fill',
     'source': 'new_plots',
     'layout': {
@@ -60,7 +63,7 @@ map.on('load', function () {
       'visibility': 'visible'
     },
     'paint': {
-      'fill-color': '#632a18',
+      'fill-color': '#8f470d',
       'fill-opacity': 1
     }
   });
@@ -68,10 +71,10 @@ map.on('load', function () {
   // Load in old plots
   map.addSource('old_plots', {
     'type': 'geojson',
-    'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/old_plots_rdm.json'
+    'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/old_rdm_plots.json'
   });
   map.addLayer({
-    'id': 'Plots for old mangroves',
+    'id': 'Random plots for old mangroves',
     'type': 'fill',
     'source': 'old_plots',
     'layout': {
@@ -79,16 +82,33 @@ map.on('load', function () {
       'visibility': 'visible'
     },
     'paint': {
-      'fill-color': '#013636',
+      'fill-color': '#036569',
       'fill-opacity': 1
     }
   });
+
+  // Popup for points
+  map.on('click', 'Random plots for old mangroves', function (e) {
+    new mapboxgl.Popup()
+      .setLngLat(e.lngLat)
+      .setHTML("id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis")
+      .addTo(map);
+  });
+
+  // Change the cursor to a pointer when the mouse is over the states layer.
+  map.on('mouseenter', 'Random plots for old mangroves', function () {
+    map.getCanvas().style.cursor = 'pointer';
+  });
+
+  // Change it back to a pointer when it leaves.
+  map.on('mouseleave', 'Random plots for old mangroves', function () {
+    map.getCanvas().style.cursor = '';
+  });
 });
 
-
 // enumerate ids of the layers
-var toggleableLayerIds = ['New mangroves', 'Plots for new mangroves', 'Old mangroves', 'Plots for old mangroves'];
-var colors = ['#ED5826', '#632a18', '#088', '#035454']
+var toggleableLayerIds = ['New mangroves', 'Random plots for new mangroves', 'Old mangroves', 'Random plots for old mangroves'];
+var colors = ['#ED5826', '#8f470d', '#088', '#036569']
 
 // set up the corresponding toggle button for each layer
 for (var i = 0; i < toggleableLayerIds.length; i++) {
