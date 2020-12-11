@@ -52,7 +52,7 @@ map.on('load', function () {
     'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/new_plots.json'
   });
   map.addlayer({
-    'id': 'new plots',
+    'id': 'New plots',
     'type': 'fill',
     'source': 'new_plots',
     'layout': {
