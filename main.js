@@ -82,6 +82,8 @@ for (var i = 0; i < toggleableLayerIds.length; i++) {
     }
   };
 
-  var layers = document.getElementById('menu');
-  layers.appendChild(link);
+  var map_container_div = document.getElementById('map-container');
+  var menu_div = document.getElementById('menu');
+  menu_div.appendChild(link);
+  map_container_div.appendChild(menu_div);
 }
