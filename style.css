@@ -10,18 +10,18 @@ body {
   top: 0; 
   left: 0;
   width: 40%;
-  border-right: 1px solid #ababab;
+  border-right: 1px solid #c9c9c9;
   overflow: scroll;
   padding: 10px 0px 10px 0px;
 }
 
 #info-container h1 {
-  color: #ababab;
+  color: #c9c9c9;
   padding: 10px 40px 20px 40px;
 }
 
 .info-paragraph {
-  color: #ababab;
+  color: #c9c9c9;
   padding: 0px 40px 10px 40px;
 }
 
@@ -70,7 +70,6 @@ body {
   margin-right: 30px;
   border-radius: 3px;
   width: 150px;
-  border: 1px solid white;
   opacity: 0.7;
 }
 

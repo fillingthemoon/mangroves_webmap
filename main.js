@@ -14,7 +14,7 @@ map.on('load', function () {
     'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/new_mgvs.json'
   });
   map.addLayer({
-    'id': 'New Mangroves',
+    'id': 'New mangroves',
     'type': 'fill',
     'source': 'new_mgvs',
     'layout': {
@@ -33,7 +33,7 @@ map.on('load', function () {
     'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/old_mgvs.json'
   });
   map.addLayer({
-    'id': 'Old Mangroves',
+    'id': 'Old mangroves',
     'type': 'fill',
     'source': 'old_mgvs',
     'layout': {
@@ -49,7 +49,7 @@ map.on('load', function () {
 
 
 // enumerate ids of the layers
-var toggleableLayerIds = ['New Mangroves', 'Old Mangroves'];
+var toggleableLayerIds = ['New mangroves', 'Old mangroves'];
 var colors = ['#ED5826', '#088']
 
 // set up the corresponding toggle button for each layer
