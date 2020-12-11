@@ -8,13 +8,13 @@ var map = new mapboxgl.Map({
 });
 
 map.on('load', function () {
-  // Load in new mangroves
-  map.addSource('new_mgvs', {
+  // load in new mangroves
+  map.addsource('new_mgvs', {
     'type': 'geojson',
     'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/new_mgvs.json'
   });
-  map.addLayer({
-    'id': 'New mangroves',
+  map.addlayer({
+    'id': 'new mangroves',
     'type': 'fill',
     'source': 'new_mgvs',
     'layout': {
@@ -27,7 +27,7 @@ map.on('load', function () {
     }
   });
 
-  // Load in new mangroves
+  // Load in old mangroves
   map.addSource('old_mgvs', {
     'type': 'geojson',
     'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/old_mgvs.json'
@@ -36,6 +36,44 @@ map.on('load', function () {
     'id': 'Old mangroves',
     'type': 'fill',
     'source': 'old_mgvs',
+    'layout': {
+      // make layer visible by default
+      'visibility': 'visible'
+    },
+    'paint': {
+      'fill-color': '#088',
+      'fill-opacity': 0.3
+    }
+  });
+
+  // load in new plots
+  map.addsource('new_plots', {
+    'type': 'geojson',
+    'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/new_plots.json'
+  });
+  map.addlayer({
+    'id': 'new plots',
+    'type': 'fill',
+    'source': 'new_plots',
+    'layout': {
+      // make layer visible by default
+      'visibility': 'visible'
+    },
+    'paint': {
+      'fill-color': '#ed5826',
+      'fill-opacity': 0.3
+    }
+  });
+
+  // Load in old plots
+  map.addSource('old_plots', {
+    'type': 'geojson',
+    'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/old_plots.json'
+  });
+  map.addLayer({
+    'id': 'Old plots',
+    'type': 'fill',
+    'source': 'old_plots',
     'layout': {
       // make layer visible by default
       'visibility': 'visible'
