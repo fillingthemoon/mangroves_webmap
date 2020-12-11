@@ -77,7 +77,7 @@ map.on('load', function () {
     'id': 'Random plots for old mangroves',
     'type': 'fill',
     'source': 'old_plots',
-    'layout': {
+   'layout': {
       // make layer visible by default
       'visibility': 'visible'
     },
