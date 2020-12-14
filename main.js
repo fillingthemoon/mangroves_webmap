@@ -125,7 +125,7 @@ map.on('load', function () {
 });
 
 // enumerate ids of the layers
-var toggleableLayerIds = ['New mangroves', 'Random plots for new mangroves', 'Old mangroves', 'Random plots for old mangroves'];
+var toggleableLayerIds = ['New mangroves', 'Buffered new', 'Old mangroves', 'Buffered old'];
 var colors = ['#ED5826', '#8f470d', '#088', '#036569']
 
 // set up the corresponding toggle button for each layer
