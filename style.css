@@ -1,3 +1,11 @@
+@media only screen and (orientation:portrait){
+  #wrapper {width:1024px}
+}
+
+@media only screen and (orientation:landscape){
+  #wrapper {width:1024px}
+}
+
 body { 
   background-color: #191a1a;
   font-family: 'Open Sans', sans-serif;
