@@ -26,6 +26,14 @@ body {
   line-height: 25px;
 }
 
+#references h2 {
+  font-size: 1.2em;
+}
+
+#references p {
+  font-size: 0.8em;
+}
+
 /* Map Container */
 
 #map-container {
@@ -33,7 +41,7 @@ body {
   top: 0; 
   right: 0;
   width: 59.97%;
-  height: 65%;
+  height: 100%;
 }
 
 #map { 
@@ -104,14 +112,5 @@ body {
 
 .mapboxgl-popup-content button {
   outline: 0;
-}
-
-/* Container3 */
-#container3 {
-  position: fixed; 
-  bottom: 0; 
-  right: 0;
-  width: 59.97%;
-  height: 35%;
 }
 
