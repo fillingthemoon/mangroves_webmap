@@ -28,6 +28,30 @@ body {
   color: #c9c9c9;
   padding: 0px 40px 10px 40px;
   line-height: 25px;
+  text-align: justify;
+}
+
+.info-paragraph h2 {
+  color: #e86b41;
+}
+
+#mangrove-species {
+  text-align: center;
+}
+
+#mangrove-species h4 {
+  color: #f7db5e;
+}
+
+#mangrove-species a {
+  font-size: 0.2em;
+  color: #008888;
+}
+
+#references {
+  color: #c9c9c9;
+  padding: 0px 40px 10px 40px;
+  line-height: 25px;
 }
 
 #references h2 {
@@ -36,6 +60,10 @@ body {
 
 #references p {
   font-size: 0.8em;
+}
+
+#references a {
+  color: #008888;
 }
 
 /* Map Container */
