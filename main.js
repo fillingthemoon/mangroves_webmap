@@ -48,14 +48,65 @@ map.on('load', function () {
   });
 
   // load in new plots
-  map.addSource('buff_new', {
+  map.addSource('buff_n1', {
     'type': 'geojson',
-    'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/buff_new.json'
+    'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/buff_n1.json'
   });
   map.addLayer({
-    'id': 'Buffered new',
+    'id': 'buff_n1',
     'type': 'fill',
-    'source': 'buff_new',
+    'source': 'buff_n1',
+    'layout': {
+      'visibility': 'visible' // make layer visible by default
+    },
+    'paint': {
+      'fill-color': '#036569',
+      'fill-opacity': 1
+    }
+  });
+
+  map.addSource('buff_n2', {
+    'type': 'geojson',
+    'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/buff_n2.json'
+  });
+  map.addLayer({
+    'id': 'buff_n2',
+    'type': 'fill',
+    'source': 'buff_n2',
+    'layout': {
+      'visibility': 'visible' // make layer visible by default
+    },
+    'paint': {
+      'fill-color': '#036569',
+      'fill-opacity': 1
+    }
+  });
+
+  map.addSource('buff_n3', {
+    'type': 'geojson',
+    'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/buff_n3.json'
+  });
+  map.addLayer({
+    'id': 'buff_n3',
+    'type': 'fill',
+    'source': 'buff_n3',
+    'layout': {
+      'visibility': 'visible' // make layer visible by default
+    },
+    'paint': {
+      'fill-color': '#036569',
+      'fill-opacity': 1
+    }
+  });
+
+  map.addSource('buff_n4', {
+    'type': 'geojson',
+    'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/buff_n4.json'
+  });
+  map.addLayer({
+    'id': 'buff_n4',
+    'type': 'fill',
+    'source': 'buff_n4',
     'layout': {
       'visibility': 'visible' // make layer visible by default
     },
@@ -66,14 +117,14 @@ map.on('load', function () {
   });
 
   // Load in old plots
-  map.addSource('buff_old', {
+  map.addSource('buff_o1', {
     'type': 'geojson',
-    'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/buff_old.json'
+    'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/buff_o1.json'
   });
   map.addLayer({
-    'id': 'Buffered old',
+    'id': 'buff_o1',
     'type': 'fill',
-    'source': 'buff_old',
+    'source': 'buff_o1',
    'layout': {
       'visibility': 'visible' // make layer visible by default
     },
@@ -83,8 +134,60 @@ map.on('load', function () {
     }
   });
 
+  map.addSource('buff_o2', {
+    'type': 'geojson',
+    'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/buff_o2.json'
+  });
+  map.addLayer({
+    'id': 'buff_o2',
+    'type': 'fill',
+    'source': 'buff_o2',
+   'layout': {
+      'visibility': 'visible' // make layer visible by default
+    },
+    'paint': {
+      'fill-color': '#8f470d',
+      'fill-opacity': 1
+    }
+  });
+
+  map.addSource('buff_o3', {
+    'type': 'geojson',
+    'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/buff_o3.json'
+  });
+  map.addLayer({
+    'id': 'buff_o3',
+    'type': 'fill',
+    'source': 'buff_o3',
+   'layout': {
+      'visibility': 'visible' // make layer visible by default
+    },
+    'paint': {
+      'fill-color': '#8f470d',
+      'fill-opacity': 1
+    }
+  });
+
+  map.addSource('buff_o4', {
+    'type': 'geojson',
+    'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/buff_o4.json'
+  });
+  map.addLayer({
+    'id': 'buff_o4',
+    'type': 'fill',
+    'source': 'buff_o4',
+   'layout': {
+      'visibility': 'visible' // make layer visible by default
+    },
+    'paint': {
+      'fill-color': '#8f470d',
+      'fill-opacity': 1
+    }
+  });
+
+
   // Popup for points
-  map.on('click', 'Buffered old', function (e) {
+  map.on('click', 'buff_n1', function (e) {
     new mapboxgl.Popup()
       .setLngLat(e.lngLat)
       .setHTML("id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis")
@@ -92,17 +195,16 @@ map.on('load', function () {
   });
 
   // Change the cursor to a pointer when the mouse is over the states layer.
-  map.on('mouseenter', 'Buffered old', function () {
+  map.on('mouseenter', 'buff_n1', function () {
     map.getCanvas().style.cursor = 'pointer';
   });
 
   // Change it back to a pointer when it leaves.
-  map.on('mouseleave', 'Buffered old', function () {
+  map.on('mouseleave', 'buff_n1', function () {
     map.getCanvas().style.cursor = '';
   });
 
-  // Popup for points
-  map.on('click', 'Buffered new', function (e) {
+  map.on('click', 'buff_n2', function (e) {
     new mapboxgl.Popup()
       .setLngLat(e.lngLat)
       .setHTML("id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis")
@@ -110,52 +212,113 @@ map.on('load', function () {
   });
 
   // Change the cursor to a pointer when the mouse is over the states layer.
-  map.on('mouseenter', 'Buffered new', function () {
+  map.on('mouseenter', 'buff_n2', function () {
     map.getCanvas().style.cursor = 'pointer';
   });
 
   // Change it back to a pointer when it leaves.
-  map.on('mouseleave', 'Buffered new', function () {
+  map.on('mouseleave', 'buff_n2', function () {
     map.getCanvas().style.cursor = '';
   });
+
+  map.on('click', 'buff_n3', function (e) {
+    new mapboxgl.Popup()
+      .setLngLat(e.lngLat)
+      .setHTML("id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis")
+      .addTo(map);
+  });
+
+  // Change the cursor to a pointer when the mouse is over the states layer.
+  map.on('mouseenter', 'buff_n3', function () {
+    map.getCanvas().style.cursor = 'pointer';
+  });
+
+  // Change it back to a pointer when it leaves.
+  map.on('mouseleave', 'buff_n3', function () {
+    map.getCanvas().style.cursor = '';
+  });
+
+  map.on('click', 'buff_n4', function (e) {
+    new mapboxgl.Popup()
+      .setLngLat(e.lngLat)
+      .setHTML("id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis")
+      .addTo(map);
+  });
+
+  // Change the cursor to a pointer when the mouse is over the states layer.
+  map.on('mouseenter', 'buff_n4', function () {
+    map.getCanvas().style.cursor = 'pointer';
+  });
+
+  // Change it back to a pointer when it leaves.
+  map.on('mouseleave', 'buff_n4', function () {
+    map.getCanvas().style.cursor = '';
+  });
+
+  map.on('click', 'buff_o1', function (e) {
+    new mapboxgl.Popup()
+      .setLngLat(e.lngLat)
+      .setHTML("id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis")
+      .addTo(map);
+  });
+
+  map.on('mouseenter', 'buff_o1', function () {
+    map.getCanvas().style.cursor = 'pointer';
+  });
+
+  map.on('mouseleave', 'buff_o1', function () {
+    map.getCanvas().style.cursor = '';
+  });
+
+  map.on('click', 'buff_o2', function (e) {
+    new mapboxgl.Popup()
+      .setLngLat(e.lngLat)
+      .setHTML("id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis")
+      .addTo(map);
+  });
+
+  map.on('mouseenter', 'buff_o2', function () {
+    map.getCanvas().style.cursor = 'pointer';
+  });
+
+  map.on('mouseleave', 'buff_o2', function () {
+    map.getCanvas().style.cursor = '';
+  });
+
+  map.on('click', 'buff_o3', function (e) {
+    new mapboxgl.Popup()
+      .setLngLat(e.lngLat)
+      .setHTML("id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis")
+      .addTo(map);
+  });
+
+  map.on('mouseenter', 'buff_o3', function () {
+    map.getCanvas().style.cursor = 'pointer';
+  });
+
+  map.on('mouseleave', 'buff_o3', function () {
+    map.getCanvas().style.cursor = '';
+  });
+
+  map.on('click', 'buff_o4', function (e) {
+    new mapboxgl.Popup()
+      .setLngLat(e.lngLat)
+      .setHTML("id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis")
+      .addTo(map);
+  });
+
+  map.on('mouseenter', 'buff_o4', function () {
+    map.getCanvas().style.cursor = 'pointer';
+  });
+
+  map.on('mouseleave', 'buff_o4', function () {
+    map.getCanvas().style.cursor = '';
+  });
+
 });
+
 
 // enumerate ids of the layers
 var toggleableLayerIds = ['New mangroves', 'Buffered new', 'Old mangroves', 'Buffered old'];
 var colors = ['#ED5826', '#8f470d', '#088', '#036569']
 
-// set up the corresponding toggle button for each layer
-for (var i = 0; i < toggleableLayerIds.length; i++) {
-  var id = toggleableLayerIds[i];
-
-  var link = document.createElement('a');
-  link.href = '#';
-  link.className = 'active';
-  link.textContent = id;
-  var color = colors[i];
-  link.style.backgroundColor = color;
-
-  link.onclick = function (e) {
-    var clickedLayer = this.textContent;
-    e.preventDefault();
-    e.stopPropagation();
-
-    var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
-
-    // toggle layer visibility by changing the layout object's visibility property
-    if (visibility === 'visible') {
-      map.setLayoutProperty(clickedLayer, 'visibility', 'none');
-      this.className = '';
-      console.log('1');
-    } else {
-      this.className = 'active';
-      map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
-      console.log('2');
-    }
-  };
-
-  var map_container_div = document.getElementById('map-container');
-  var menu_div = document.getElementById('menu');
-  menu_div.appendChild(link);
-  map_container_div.appendChild(menu_div);
-}
