@@ -10,7 +10,7 @@ var beforeMap = new mapboxgl.Map({
 
 var afterMap = new mapboxgl.Map({
   container: 'after',
-  style: 'mapbox://styles/mapbox/outdoors-v10',
+  style: 'mapbox://styles/mapbox/satellite-v9',
   center: [103.9515, 1.3782],
   zoom: 17
 });
