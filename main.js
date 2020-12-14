@@ -5,7 +5,7 @@ var map = new mapboxgl.Map({
   container: 'map', // container id
   style: 'mapbox://styles/mapbox/dark-v9', // style URL
   center: [103.9515, 1.3782], // starting position [lng, lat]
-  zoom: 16 // starting zoom
+  zoom: 17 // starting zoom
 });
 
 
@@ -190,7 +190,11 @@ map.on('load', function () {
   map.on('click', 'buff_n1', function (e) {
     new mapboxgl.Popup()
       .setLngLat(e.lngLat)
-      .setHTML("Plot N1 <br> Species:<br> - A <br> - B <br> - C")
+      .setHTML(
+        "<b>Plot ID:</b> N1 <br><br>"
+        + "<b>Mangrove species:</b><br> - A <br> - B <br> - C <br><br>"
+        + "<b>Total carbon stock:</b> X"
+      )
       .addTo(map);
   });
 
