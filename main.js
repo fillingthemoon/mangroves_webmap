@@ -50,14 +50,14 @@ map.on('load', function () {
   });
 
   // load in new plots
-  map.addSource('new_plots', {
+  map.addSource('buff_new', {
     'type': 'geojson',
-    'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/new_rdm_plots.json'
+    'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/buff_new.json'
   });
   map.addLayer({
-    'id': 'Random plots for new mangroves',
+    'id': 'Buffered new',
     'type': 'fill',
-    'source': 'new_plots',
+    'source': 'buff_new',
     'layout': {
       // make layer visible by default
       'visibility': 'visible'
@@ -69,14 +69,14 @@ map.on('load', function () {
   });
 
   // Load in old plots
-  map.addSource('old_plots', {
+  map.addSource('buff_old', {
     'type': 'geojson',
-    'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/old_rdm_plots.json'
+    'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/buff_old.json'
   });
   map.addLayer({
-    'id': 'Random plots for old mangroves',
+    'id': 'Buffered old',
     'type': 'fill',
-    'source': 'old_plots',
+    'source': 'buff_old',
    'layout': {
       // make layer visible by default
       'visibility': 'visible'
@@ -88,7 +88,7 @@ map.on('load', function () {
   });
 
   // Popup for points
-  map.on('click', 'Random plots for old mangroves', function (e) {
+  map.on('click', 'Buffered old', function (e) {
     new mapboxgl.Popup()
       .setLngLat(e.lngLat)
       .setHTML("id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis")
@@ -96,12 +96,30 @@ map.on('load', function () {
   });
 
   // Change the cursor to a pointer when the mouse is over the states layer.
-  map.on('mouseenter', 'Random plots for old mangroves', function () {
+  map.on('mouseenter', 'Buffered old', function () {
     map.getCanvas().style.cursor = 'pointer';
   });
 
   // Change it back to a pointer when it leaves.
-  map.on('mouseleave', 'Random plots for old mangroves', function () {
+  map.on('mouseleave', 'Buffered old', function () {
+    map.getCanvas().style.cursor = '';
+  });
+
+  // Popup for points
+  map.on('click', 'Buffered new', function (e) {
+    new mapboxgl.Popup()
+      .setLngLat(e.lngLat)
+      .setHTML("id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis")
+      .addTo(map);
+  });
+
+  // Change the cursor to a pointer when the mouse is over the states layer.
+  map.on('mouseenter', 'Buffered new', function () {
+    map.getCanvas().style.cursor = 'pointer';
+  });
+
+  // Change it back to a pointer when it leaves.
+  map.on('mouseleave', 'Buffered new', function () {
     map.getCanvas().style.cursor = '';
   });
 });
