@@ -190,7 +190,7 @@ map.on('load', function () {
   map.on('click', 'buff_n1', function (e) {
     new mapboxgl.Popup()
       .setLngLat(e.lngLat)
-      .setHTML("id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis")
+      .setHTML("Plot N1 <br> Species: ")
       .addTo(map);
   });
 
