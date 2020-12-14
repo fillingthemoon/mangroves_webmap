@@ -21,11 +21,10 @@ map.on('load', function () {
     'type': 'fill',
     'source': 'new_mgvs',
     'layout': {
-      // make layer visible by default
-      'visibility': 'visible'
+      'visibility': 'visible' // make layer visible by default
     },
     'paint': {
-      'fill-color': '#ed5826',
+      'fill-color': '#008888',
       'fill-opacity': 0.2
     }
   });
@@ -40,11 +39,10 @@ map.on('load', function () {
     'type': 'fill',
     'source': 'old_mgvs',
     'layout': {
-      // make layer visible by default
-      'visibility': 'visible'
+      'visibility': 'visible' // make layer visible by default
     },
     'paint': {
-      'fill-color': '#008888',
+      'fill-color': '#ed5826',
       'fill-opacity': 0.2
     }
   });
@@ -59,11 +57,10 @@ map.on('load', function () {
     'type': 'fill',
     'source': 'buff_new',
     'layout': {
-      // make layer visible by default
-      'visibility': 'visible'
+      'visibility': 'visible' // make layer visible by default
     },
     'paint': {
-      'fill-color': '#8f470d',
+      'fill-color': '#036569',
       'fill-opacity': 1
     }
   });
@@ -78,11 +75,10 @@ map.on('load', function () {
     'type': 'fill',
     'source': 'buff_old',
    'layout': {
-      // make layer visible by default
-      'visibility': 'visible'
+      'visibility': 'visible' // make layer visible by default
     },
     'paint': {
-      'fill-color': '#036569',
+      'fill-color': '#8f470d',
       'fill-opacity': 1
     }
   });
