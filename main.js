@@ -1,13 +1,26 @@
 // Create map
 mapboxgl.accessToken = 'pk.eyJ1IjoiZmlsbGluZ3RoZW1vb24iLCJhIjoiY2tpaGxrbjZmMDNicTJ4bThmd3preWJvbyJ9.ca_X_SaaPktyuEBL2RzoRA';
 
-var map = new mapboxgl.Map({
-  container: 'map', // container id
-  style: 'mapbox://styles/mapbox/dark-v9', // style URL
+var beforeMap = new mapboxgl.Map({
+  container: 'before', // container id
+  style: 'mapbox://styles/mapbox/dark-v10', // style URL
   center: [103.9515, 1.3782], // starting position [lng, lat]
   zoom: 17 // starting zoom
 });
 
+var afterMap = new mapboxgl.Map({
+  container: 'after',
+  style: 'mapbox://styles/mapbox/outdoors-v10',
+  center: [103.9515, 1.3782],
+  zoom: 17
+});
+
+// A selector or reference to HTML element
+var container = '#comparison-container';
+
+var map = new mapboxgl.Compare(beforeMap, afterMap, container, {
+  orientation: 'vertical' // Optional. Sets the orientation of swiper to horizontal or vertical, defaults to vertical
+});
 
 // Add GeoJSON files
 map.on('load', function () {
@@ -17,7 +30,7 @@ map.on('load', function () {
     'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/new_mgvs.json'
   });
   map.addLayer({
-    'id': 'New mangroves',
+    'id': 'new_mgvs',
     'type': 'fill',
     'source': 'new_mgvs',
     'layout': {
@@ -35,7 +48,7 @@ map.on('load', function () {
     'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/old_mgvs.json'
   });
   map.addLayer({
-    'id': 'Old mangroves',
+    'id': 'old_mgvs',
     'type': 'fill',
     'source': 'old_mgvs',
     'layout': {
@@ -138,7 +151,7 @@ map.on('load', function () {
     'type': 'geojson',
     'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/buff_o2.json'
   });
-  map.addLayer({
+  beforemap.addLayer({
     'id': 'buff_o2',
     'type': 'fill',
     'source': 'buff_o2',

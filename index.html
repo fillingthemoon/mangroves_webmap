@@ -6,7 +6,6 @@
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css" rel="stylesheet" />
-
     <link rel="stylesheet" href="style.css">
   </head>
 
@@ -55,10 +54,20 @@
       </div>
     </div>
 
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.css"
+      type="text/css"
+      />
+
     <div id="map-container">
+      <div id="comparison-container">
+        <div id="before" class="map"></div>
+        <div id="after" class="map"></div>
+      </div>
       <div id="layers-title-cntr"><p>Layers</p></div>
       <nav id="menu"></nav>
-      <div id="map"></div>
       <div class='map-overlay' id='legend'></div>
     </div>
 
