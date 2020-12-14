@@ -315,10 +315,25 @@ map.on('load', function () {
     map.getCanvas().style.cursor = '';
   });
 
+  map.addControl(new mapboxgl.ScaleControl({position: 'bottom-right'}));
 });
 
 
 // enumerate ids of the layers
-var toggleableLayerIds = ['New mangroves', 'Buffered new', 'Old mangroves', 'Buffered old'];
+var layers = ['New mangrove area', 'Plots (new mangroves)', 'Old mangrove area', 'Plots (old mangroves)'];
 var colors = ['#ED5826', '#8f470d', '#088', '#036569']
 
+for (i = 0; i < layers.length; i++) {
+  var layer = layers[i];
+  var color = colors[i];
+  var item = document.createElement('div');
+  var key = document.createElement('span');
+  key.className = 'legend-key';
+  key.style.backgroundColor = color;
+
+  var value = document.createElement('span');
+  value.innerHTML = layer;
+  item.appendChild(key);
+  item.appendChild(value);
+  legend.appendChild(item);
+}
