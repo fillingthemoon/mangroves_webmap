@@ -32,7 +32,7 @@ body {
   top: 0; 
   right: 0;
   bottom: 0; 
-  width: 59.91%;
+  width: 60%;
 }
 
 #map { 
@@ -49,12 +49,11 @@ body {
   right: 0;
   margin-right: 30px;
   width: 190px;
-  opacity: 0.7;
 }
 
 #layers-title-cntr p {
   font-size: 1.3em;
-  color: white;
+  color: rgba(255, 255, 255, 0.6);
   display: block;
   margin: 0;
   padding: 10px;
@@ -80,6 +79,7 @@ body {
   height: 80px;
   margin-bottom: 40px;
   width: 190px;
+  color: #191a1a;
 }
 
 .legend-key {
@@ -92,7 +92,7 @@ body {
 
 /* Popups */
 .mapboxgl-popup {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .mapboxgl-popup-content {

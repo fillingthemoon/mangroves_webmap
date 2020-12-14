@@ -190,7 +190,7 @@ map.on('load', function () {
   map.on('click', 'buff_n1', function (e) {
     new mapboxgl.Popup()
       .setLngLat(e.lngLat)
-      .setHTML("Plot N1 <br> Species: ")
+      .setHTML("Plot N1 <br> Species:<br> - A <br> - B <br> - C")
       .addTo(map);
   });
 
@@ -321,7 +321,7 @@ map.on('load', function () {
 
 // enumerate ids of the layers
 var layers = ['New mangrove area', 'Plots (new mangroves)', 'Old mangrove area', 'Plots (old mangroves)'];
-var colors = ['#ED5826', '#8f470d', '#088', '#036569']
+var colors = ['#ed5826', '#8f470d', '#008888', '#036569']
 
 for (i = 0; i < layers.length; i++) {
   var layer = layers[i];
