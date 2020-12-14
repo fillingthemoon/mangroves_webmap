@@ -23,6 +23,7 @@ body {
 .info-paragraph {
   color: #c9c9c9;
   padding: 0px 40px 10px 40px;
+  line-height: 25px;
 }
 
 /* Map Container */
@@ -31,8 +32,8 @@ body {
   position: fixed; 
   top: 0; 
   right: 0;
-  bottom: 0; 
-  width: 60%;
+  width: 59.97%;
+  height: 65%;
 }
 
 #map { 
@@ -104,3 +105,13 @@ body {
 .mapboxgl-popup-content button {
   outline: 0;
 }
+
+/* Container3 */
+#container3 {
+  position: fixed; 
+  bottom: 0; 
+  right: 0;
+  width: 59.97%;
+  height: 35%;
+}
+
