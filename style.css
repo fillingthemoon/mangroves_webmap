@@ -39,8 +39,19 @@ body {
   text-align: center;
 }
 
-#mangrove-species h4 {
+#mangrove-species i {
   color: #f7db5e;
+}
+
+#mangrove-species table {
+  color: #c9c9c9;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+#mangrove-species th, #mangrove-species td {
+  padding: 20px 5px 20px 5px;
+  border: 1px solid #c9c9c9;
 }
 
 #mangrove-species a {
