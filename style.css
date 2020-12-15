@@ -1,6 +1,7 @@
 body { 
   background-color: #191a1a;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 200;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -47,11 +48,13 @@ body {
   color: #c9c9c9;
   text-align: center;
   border-collapse: collapse;
+  font-weight: 200;
 }
 
 #mangrove-species th, #mangrove-species td {
   padding: 20px 5px 20px 5px;
-  border: 1px solid #c9c9c9;
+  border: 1px solid #424242;
+  
 }
 
 #mangrove-species a {
@@ -131,13 +134,14 @@ body {
 }
 
 #legend {
+  font-family: 'Work Sans', sans-serif;
   padding: 10px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   line-height: 20px;
   height: 80px;
   margin-bottom: 40px;
   width: 190px;
-  color: #191a1a;
+  color: #0f0f0f;
 }
 
 .legend-key {
@@ -150,6 +154,7 @@ body {
 
 /* Popups */
 .mapboxgl-popup {
+  font-family: 'Work Sans', sans-serif;
   opacity: 0.6;
 }
 
