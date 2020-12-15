@@ -42,15 +42,6 @@ body {
   background-color: #e86b41;
 }
 
-#mangrove-species i {
-  color: #f7db5e;
-}
-
-#mangrove-species a {
-  font-size: 5px;
-  color: #076569;
-}
-
 #mangrove-species img {
   width: 100%;
 }
@@ -75,12 +66,15 @@ div.p-container {
   padding: 10px 20px;
 }
 
-/* References */
+.polaroid h4 {
+  font-weight: 200;
+  font-style: italic;
+}
 
+/* References */
 #references, #img-references {
   color: #3d3d3d;
   padding: 0px 40px 10px 40px;
-  line-height: 25px;
 }
 
 #references h2, #img-references h2  {
@@ -92,9 +86,11 @@ div.p-container {
 
 #references li, #img-references li {
   font-size: 0.8em;
+  line-height: 15px;
 }
 
 #references a, #img-references a {
+  font-size: 0.8em;
   color: #076569;
 }
 
@@ -174,7 +170,7 @@ div.p-container {
 .mapboxgl-popup {
   font-family: 'Work Sans', sans-serif;
   font-weight: 300;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .mapboxgl-popup-content {
