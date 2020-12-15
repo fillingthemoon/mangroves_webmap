@@ -33,7 +33,7 @@ for (baMap of baMapArr) {
       color = no_mgvs == "new_mgvs" ? '#008888' : '#ed5826';
       baMap.addSource(no_mgvs, {
         'type': 'geojson',
-        'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/' + no_mgvs + '.json'
+        'data': 'https://sgmangroves.com/geojsons/' + no_mgvs + '.json'
       });
       baMap.addLayer({
         'id': no_mgvs,
@@ -55,7 +55,7 @@ for (baMap of baMapArr) {
       color = plots[i].includes("_n") ? "#036569" : "#8f470d";
       baMap.addSource(plots[i], {
         'type': 'geojson',
-        'data': 'https://fillingthemoon.github.io/mangroves_webmap/geojsons/' + plots[i] + '.json'
+        'data': 'https://sgmangroves.com/geojsons/' + plots[i] + '.json'
       });
       baMap.addLayer({
         'id': plots[i],
