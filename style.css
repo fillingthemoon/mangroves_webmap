@@ -106,25 +106,23 @@ body {
 #layers-title-cntr {
   position: absolute;
   z-index: 1;
-  top: 8px;
   left: 0;
-  margin-left: 30px;
-  width: 190px;
+  margin-left: 12px;
+  width: 170px;
 }
 
 #layers-title-cntr p {
-  font-size: 1.3em;
+  font-size: 1.2em;
   color: rgba(255, 255, 255, 0.6);
   display: block;
   margin: 0;
   padding: 10px;
   font-weight: bold;
-  text-align: center;
 }
 
 .map-overlay {
   position: absolute;
-  top: 60px;
+  top: 42px;
   left: 0;
   background: rgba(255, 255, 255, 0.6);
   margin-left: 20px;
@@ -135,12 +133,14 @@ body {
 
 #legend {
   font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.9em;
   padding: 10px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   line-height: 20px;
   height: 80px;
+  width: 170px;
   margin-bottom: 40px;
-  width: 190px;
   color: #0f0f0f;
 }
 
@@ -155,6 +155,7 @@ body {
 /* Popups */
 .mapboxgl-popup {
   font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
   opacity: 0.6;
 }
 
