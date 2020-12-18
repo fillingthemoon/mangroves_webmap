@@ -22,6 +22,7 @@ body {
 
 #info-container h1 {
   color: #f6f6f4;
+  font-size: 1.9em;
   padding: 0px 0px 0px 40px;
   text-align: right;
   width: 390px;
@@ -42,9 +43,15 @@ body {
   background-color: #e86b41;
 }
 
+.info-paragraph a {
+  font-weight: 300;
+  color: #e05222;
+}
+
 .how-to {
   margin: 30px;
   max-width: 60%;
+  border: 1px solid #c9c9c9;
 }
 
 #mangrove-species img {
@@ -75,6 +82,16 @@ div.p-container {
   font-weight: 200;
   font-style: italic;
 }
+
+.polaroid a {
+  text-decoration: none;
+  color: #3d3d3d;
+}
+
+.polaroid a:hover {
+  font-weight: 400;
+}
+
 
 /* References */
 #references, #img-references {

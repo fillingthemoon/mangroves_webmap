@@ -73,45 +73,44 @@ for (baMap of baMapArr) {
 
     html_popup_txt = [
       "<b>Plot ID:</b> N1 <br><br>"
-      + "<b>Mangrove species:</b><br> - Rhizophora mucronata <br> - Avicennia officinalis <br> - Bruguiera cylindrica <br> - Sonneratia alba <br> - Rhizophora apiculata <br><br>"
-      + "<b>Total AGB (Mg/ha):</b> <br> 260.08 <br><br>"
-      + "<b>Soil Carbon (Mg/ha):</b> <br> 297.55",
+      + "<b>Mangrove species:</b><br> - Avicennia officinalis <br> - Bruguiera cylindrica <br> - Rhizophora apiculata <br> - Rhizophora mucronata <br> - Sonneratia alba <br><br>"
+      + "<b>Total AGB (Mg/ha):</b> <br> ~260 <br><br>"
+      + "<b>Soil Carbon (Mg/ha):</b> <br> ~300",
 
-      "<b>Plot ID:</b> N2 <br><br>"
-      + "<b>Mangrove species:</b><br> - Rhizophora mucronata <br> - Avicennia officinalis <br> - Bruguiera cylindrica <br> - Sonneratia alba <br> - Rhizophora apiculata <br><br>"
-      + "<b>Total AGB (Mg/ha):</b> <br> 260.08 <br><br>"
-      + "<b>Soil Carbon (Mg/ha):</b> <br> 297.55",
+      "<b>Plot ID:</b> N1 <br><br>"
+      + "<b>Mangrove species:</b><br> - Avicennia officinalis <br> - Bruguiera cylindrica <br> - Rhizophora apiculata <br> - Rhizophora mucronata <br> - Sonneratia alba <br><br>"
+      + "<b>Total AGB (Mg/ha):</b> <br> ~260 <br><br>"
+      + "<b>Soil Carbon (Mg/ha):</b> <br> ~300",
 
-      "<b>Plot ID:</b> N3 <br><br>"
-      + "<b>Mangrove species:</b><br> - Rhizophora mucronata <br> - Avicennia officinalis <br> - Bruguiera cylindrica <br> - Sonneratia alba <br> - Rhizophora apiculata <br><br>"
-      + "<b>Total AGB (Mg/ha):</b> <br> 260.08 <br><br>"
-      + "<b>Soil Carbon (Mg/ha):</b> <br> 297.55",
+      "<b>Plot ID:</b> N1 <br><br>"
+      + "<b>Mangrove species:</b><br> - Avicennia officinalis <br> - Bruguiera cylindrica <br> - Rhizophora apiculata <br> - Rhizophora mucronata <br> - Sonneratia alba <br><br>"
+      + "<b>Total AGB (Mg/ha):</b> <br> ~260 <br><br>"
+      + "<b>Soil Carbon (Mg/ha):</b> <br> ~300",
 
-      "<b>Plot ID:</b> N4 <br><br>"
-      + "<b>Mangrove species:</b><br> - Rhizophora mucronata <br> - Avicennia officinalis <br> - Bruguiera cylindrica <br> - Sonneratia alba <br> - Rhizophora apiculata <br><br>"
-      + "<b>Total AGB (Mg/ha):</b> <br> 260.08 <br><br>"
-      + "<b>Soil Carbon (Mg/ha):</b> <br> 297.55",
+      "<b>Plot ID:</b> N1 <br><br>"
+      + "<b>Mangrove species:</b><br> - Avicennia officinalis <br> - Bruguiera cylindrica <br> - Rhizophora apiculata <br> - Rhizophora mucronata <br> - Sonneratia alba <br><br>"
+      + "<b>Total AGB (Mg/ha):</b> <br> ~260 <br><br>"
+      + "<b>Soil Carbon (Mg/ha):</b> <br> ~300",
 
-      "<b>Plot ID:</b> O1 <br><br>"
-      + "<b>Mangrove species:</b><br> - Rhizophora mucronata <br> - Avicennia officinalis <br> - Bruguiera cylindrica <br> - Sonneratia alba <br> - Rhizophora apiculata <br><br>"
-      + "<b>Total AGB (Mg/ha):</b> <br> 260.08 <br><br>"
-      + "<b>Soil Carbon (Mg/ha):</b> <br> 297.55",
+      "<b>Plot ID:</b> N1 <br><br>"
+      + "<b>Mangrove species:</b><br> - Avicennia officinalis <br> - Bruguiera cylindrica <br> - Rhizophora apiculata <br> - Rhizophora mucronata <br> - Sonneratia alba <br><br>"
+      + "<b>Total AGB (Mg/ha):</b> <br> ~260 <br><br>"
+      + "<b>Soil Carbon (Mg/ha):</b> <br> ~300",
 
-      "<b>Plot ID:</b> O2 <br><br>"
-      + "<b>Mangrove species:</b><br> - Rhizophora mucronata <br> - Avicennia officinalis <br> - Bruguiera cylindrica <br> - Sonneratia alba <br> - Rhizophora apiculata <br><br>"
-      + "<b>Total AGB (Mg/ha):</b> <br> 260.08 <br><br>"
-      + "<b>Soil Carbon (Mg/ha):</b> <br> 297.55",
+      "<b>Plot ID:</b> N1 <br><br>"
+      + "<b>Mangrove species:</b><br> - Avicennia officinalis <br> - Bruguiera cylindrica <br> - Rhizophora apiculata <br> - Rhizophora mucronata <br> - Sonneratia alba <br><br>"
+      + "<b>Total AGB (Mg/ha):</b> <br> ~260 <br><br>"
+      + "<b>Soil Carbon (Mg/ha):</b> <br> ~300",
 
-      "<b>Plot ID:</b> O3 <br><br>"
-      + "<b>Mangrove species:</b><br> - Rhizophora mucronata <br> - Avicennia officinalis <br> - Bruguiera cylindrica <br> - Sonneratia alba <br> - Rhizophora apiculata <br><br>"
-      + "<b>Total AGB (Mg/ha):</b> <br> 260.08 <br><br>"
-      + "<b>Soil Carbon (Mg/ha):</b> <br> 297.55",
+      "<b>Plot ID:</b> N1 <br><br>"
+      + "<b>Mangrove species:</b><br> - Avicennia officinalis <br> - Bruguiera cylindrica <br> - Rhizophora apiculata <br> - Rhizophora mucronata <br> - Sonneratia alba <br><br>"
+      + "<b>Total AGB (Mg/ha):</b> <br> ~260 <br><br>"
+      + "<b>Soil Carbon (Mg/ha):</b> <br> ~300",
 
-      "<b>Plot ID:</b> O4 <br><br>"
-      + "<b>Mangrove species:</b><br> - Rhizophora mucronata <br> - Avicennia officinalis <br> - Bruguiera cylindrica <br> - Sonneratia alba <br> - Rhizophora apiculata <br><br>"
-      + "<b>Total AGB (Mg/ha):</b> <br> 260.08 <br><br>"
-      + "<b>Soil Carbon (Mg/ha):</b> <br> 297.55",
-
+      "<b>Plot ID:</b> N1 <br><br>"
+      + "<b>Mangrove species:</b><br> - Avicennia officinalis <br> - Bruguiera cylindrica <br> - Rhizophora apiculata <br> - Rhizophora mucronata <br> - Sonneratia alba <br><br>"
+      + "<b>Total AGB (Mg/ha):</b> <br> ~260 <br><br>"
+      + "<b>Soil Carbon (Mg/ha):</b> <br> ~300",
     ];
 
     // Popup for points
