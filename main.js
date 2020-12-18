@@ -73,15 +73,45 @@ for (baMap of baMapArr) {
 
     html_popup_txt = [
       "<b>Plot ID:</b> N1 <br><br>"
-      + "<b>Mangrove species:</b><br> - A <br> - B <br> - C <br><br>"
-      + "<b>Total carbon stock:</b> X",
-      "id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est lorem ipsum dolor sit amet consectetur adipiscing elit pe",
-      "id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est lorem ipsum dolor sit amet consectetur adipiscing elit pe",
-      "id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est lorem ipsum dolor sit amet consectetur adipiscing elit pe",
-      "id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est lorem ipsum dolor sit amet consectetur adipiscing elit pe",
-      "id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est lorem ipsum dolor sit amet consectetur adipiscing elit pe",
-      "id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est lorem ipsum dolor sit amet consectetur adipiscing elit pe",
-      "id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est lorem ipsum dolor sit amet consectetur adipiscing elit pe"
+      + "<b>Mangrove species:</b><br> - Rhizophora mucronata <br> - Avicennia officinalis <br> - Bruguiera cylindrica <br> - Sonneratia alba <br> - Rhizophora apiculata <br><br>"
+      + "<b>Total AGB (Mg/ha):</b> <br> 260.08 <br><br>"
+      + "<b>Soil Carbon (Mg/ha):</b> <br> 297.55",
+
+      "<b>Plot ID:</b> N2 <br><br>"
+      + "<b>Mangrove species:</b><br> - Rhizophora mucronata <br> - Avicennia officinalis <br> - Bruguiera cylindrica <br> - Sonneratia alba <br> - Rhizophora apiculata <br><br>"
+      + "<b>Total AGB (Mg/ha):</b> <br> 260.08 <br><br>"
+      + "<b>Soil Carbon (Mg/ha):</b> <br> 297.55",
+
+      "<b>Plot ID:</b> N3 <br><br>"
+      + "<b>Mangrove species:</b><br> - Rhizophora mucronata <br> - Avicennia officinalis <br> - Bruguiera cylindrica <br> - Sonneratia alba <br> - Rhizophora apiculata <br><br>"
+      + "<b>Total AGB (Mg/ha):</b> <br> 260.08 <br><br>"
+      + "<b>Soil Carbon (Mg/ha):</b> <br> 297.55",
+
+      "<b>Plot ID:</b> N4 <br><br>"
+      + "<b>Mangrove species:</b><br> - Rhizophora mucronata <br> - Avicennia officinalis <br> - Bruguiera cylindrica <br> - Sonneratia alba <br> - Rhizophora apiculata <br><br>"
+      + "<b>Total AGB (Mg/ha):</b> <br> 260.08 <br><br>"
+      + "<b>Soil Carbon (Mg/ha):</b> <br> 297.55",
+
+      "<b>Plot ID:</b> O1 <br><br>"
+      + "<b>Mangrove species:</b><br> - Rhizophora mucronata <br> - Avicennia officinalis <br> - Bruguiera cylindrica <br> - Sonneratia alba <br> - Rhizophora apiculata <br><br>"
+      + "<b>Total AGB (Mg/ha):</b> <br> 260.08 <br><br>"
+      + "<b>Soil Carbon (Mg/ha):</b> <br> 297.55",
+
+      "<b>Plot ID:</b> O2 <br><br>"
+      + "<b>Mangrove species:</b><br> - Rhizophora mucronata <br> - Avicennia officinalis <br> - Bruguiera cylindrica <br> - Sonneratia alba <br> - Rhizophora apiculata <br><br>"
+      + "<b>Total AGB (Mg/ha):</b> <br> 260.08 <br><br>"
+      + "<b>Soil Carbon (Mg/ha):</b> <br> 297.55",
+
+      "<b>Plot ID:</b> O3 <br><br>"
+      + "<b>Mangrove species:</b><br> - Rhizophora mucronata <br> - Avicennia officinalis <br> - Bruguiera cylindrica <br> - Sonneratia alba <br> - Rhizophora apiculata <br><br>"
+      + "<b>Total AGB (Mg/ha):</b> <br> 260.08 <br><br>"
+      + "<b>Soil Carbon (Mg/ha):</b> <br> 297.55",
+
+      "<b>Plot ID:</b> O4 <br><br>"
+      + "<b>Mangrove species:</b><br> - Rhizophora mucronata <br> - Avicennia officinalis <br> - Bruguiera cylindrica <br> - Sonneratia alba <br> - Rhizophora apiculata <br><br>"
+      + "<b>Total AGB (Mg/ha):</b> <br> 260.08 <br><br>"
+      + "<b>Soil Carbon (Mg/ha):</b> <br> 297.55",
+
     ];
 
     // Popup for points

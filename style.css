@@ -42,6 +42,11 @@ body {
   background-color: #e86b41;
 }
 
+.how-to {
+  margin: 30px;
+  max-width: 60%;
+}
+
 #mangrove-species img {
   width: 100%;
 }
