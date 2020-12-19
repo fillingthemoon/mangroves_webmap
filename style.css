@@ -48,6 +48,11 @@ body {
   color: #e05222;
 }
 
+#email_address:hover {
+  color: #3d3d3d;
+  transition: 0.3s;
+}
+
 .how-to {
   margin: 30px;
   max-width: 60%;
@@ -150,7 +155,7 @@ div.p-container {
 
 #layers-title-cntr p {
   font-size: 1.2em;
-  color: #454444;
+  color: #3d3d3d;
   display: block;
   margin: 0;
   padding: 10px;
@@ -177,7 +182,7 @@ div.p-container {
   line-height: 20px;
   height: 80px;
   width: 180px;
-  color: #0f0f0f;
+  color: #3d3d3d;
 }
 
 .legend-key {

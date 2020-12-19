@@ -4,15 +4,15 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZmlsbGluZ3RoZW1vb24iLCJhIjoiY2tpaGxrbjZmMDNic
 var beforeMap = new mapboxgl.Map({
   container: 'before', // container id
   style: 'mapbox://styles/mapbox/light-v10', // style URL
-  center: [103.9515, 1.3782], // starting position [lng, lat]
-  zoom: 17 // starting zoom
+  center: [103.954, 1.3782], // starting position [lng, lat]
+  zoom: 16 // starting zoom
 });
 
 var afterMap = new mapboxgl.Map({
   container: 'after',
   style: 'mapbox://styles/mapbox/satellite-v9',
-  center: [103.9515, 1.3782],
-  zoom: 17
+  center: [103.954, 1.3782],
+  zoom: 16
 });
 
 // A selector or reference to HTML element
